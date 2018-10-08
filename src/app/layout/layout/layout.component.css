@@ -1,0 +1,10 @@
+.layout-custom > .header{
+    width: 100%;
+  
+    height: auto;
+}
+
+.layout-custom > .footer{
+    background: yellow;
+    height: auto;
+}

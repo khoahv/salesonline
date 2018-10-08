@@ -1,0 +1,5 @@
+<app-ghengoi #t *ngFor="let ghe of danhSachGhe" 
+(eventDatghe)='Dat_Ghe_Parent($event, ghe.maghe)'>
+</app-ghengoi>
+<span>tổng số ghế chưa đặt: {{ soGheDat}}</span>
+<span>tổng số ghế đã đặt : {{sogheChuaDat}}</span>

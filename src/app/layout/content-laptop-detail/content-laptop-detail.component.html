@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-lg-3" *ngFor="let itemproductlaptop of itemproductlaptops let i =index">
+      <div class="container">
+        <div class="card bg-light" style="width:300px">
+          <img class="card-img-top" src="{{itemproductlaptop.img}}" alt="Card image" style="max-width:100%; height: 250px;">
+          <div class="card-body text-center">
+            <h4 class="card-title text-center">{{itemproductlaptop.title}}</h4>
+            <p *ngIf="status" class="card-text">{{itemproductlaptop.description}}</p>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal_1" (click)="clickDetail(i)">Detail</a>
+            <button *ngIf="!status" class="btn btn-danger" (click)="clickHide()">Hide</button>
+            <button *ngIf="status"  class="btn btn-danger" (click)="clickHide()">Show</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myModal_1" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Description</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm"><b>Name</b>
+              <p>{{itemproductlaptops[index].title}}</p>
+            </div>
+            <div class="col-sm"><b>Description</b>
+              <p>{{itemproductlaptops[index].description}}</p>
+            </div>
+            <div class="col-sm"><b>Price</b>
+              <p>{{itemproductlaptops[index].price}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>

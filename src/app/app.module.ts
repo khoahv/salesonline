@@ -10,7 +10,7 @@ import { GhengoiComponent } from './layout/danh-sachghe-ngoi/ghengoi/ghengoi.com
 import { GheNgoiModule } from './layout/module/danhsachsongoi.module';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

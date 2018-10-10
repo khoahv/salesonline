@@ -8,6 +8,8 @@ import { LayoutComponent } from './../../layout/layout/layout.component';
 import { SliderComponent } from './../../layout/slider/slider.component';
 import { ContentsLaptopComponent } from './../../layout/contents-laptop/contents-laptop.component';
 import { CommonModule } from '../../../../node_modules/@angular/common';
+import { ContentPhoneDetailComponent } from '../content-phone-detail/content-phone-detail.component';
+import { ContentLaptopDetailComponent } from '../content-laptop-detail/content-laptop-detail.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -17,6 +19,8 @@ import { CommonModule } from '../../../../node_modules/@angular/common';
     LayoutComponent,
     SliderComponent,
     ContentsLaptopComponent,
+    ContentPhoneDetailComponent,
+    ContentLaptopDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,10 @@ import { CommonModule } from '../../../../node_modules/@angular/common';
     FooterComponent,
     LayoutComponent,
     ContentsLaptopComponent,
-    SliderComponent
+    SliderComponent,
+    ContentPhoneDetailComponent,
+    ContentLaptopDetailComponent
+
 ]
 })
 export class LayoutModule { }
